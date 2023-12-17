@@ -1,0 +1,216 @@
+/* Reset some default styles for consistency */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling for the header */
+.headerPrimary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* background-color: yellow; */
+  padding: 15px;
+  background-color: #fff; /* Set your background color */
+  box-shadow: 0 4px 6px rgba(89, 182, 206, 0.1); /* Add a subtle box shadow */
+}
+
+.headerPrimary .navbar {
+  display: flex;
+  /* background-color: yellow; */
+  justify-content: space-around;
+  width: 100vw;
+}
+
+.logo_mobile {
+  width: 20vw;
+}
+
+.searchInput {
+  /* background-color: darkcyan; */
+  width: 30%;
+  position: relative;
+}
+
+.searchIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.links_nav {
+  /* background-color: blue; */
+  width: 35%;
+  margin-left: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Styling for the logo */
+.logo_mobile img {
+  max-height: 50px; /* Set your preferred max height */
+}
+
+/* Styling for the courses list */
+.courses_list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff; /* Set your background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  width: 100%;
+  z-index: 1;
+}
+
+/* header.css */
+
+.links_nav .nav-link {
+  color: black ;
+  font-size: 0.9rem;
+}
+
+.links_nav .nav-link:hover {
+  /* Optional: Change color on hover */
+  color:black;
+  border-bottom: 2px dotted;
+}
+
+
+.left-course,
+.right-course {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+}
+
+.menu-item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for the search bar */
+.mid.part {
+  display: flex;
+  align-items: center;
+}
+
+.searchIcon {
+  margin-right: 5%;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.searchBar {
+  padding: 10px;
+  border: 1px solid #ccc; /* Set your preferred border color */
+  border-radius: 5px;
+  outline: none;
+  transition: border 0.3s;
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+
+
+/* Styling for the dropdown */
+.what-we-do {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.dropdown {
+  display: flex;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff; /* Set your background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown ul li {
+  margin: 10px;
+}
+
+/* Styling for buttons */
+.buttons {
+  display: flex;
+  margin-left: 20px;
+}
+
+.buttons li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+/* Styling for the user icon */
+.user-icon-container {
+  margin-left: 20px;
+}
+
+.user-icon {
+  width: 40px; /* Set your preferred width */
+  height: 40px; /* Set your preferred height */
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+
+.basic-nav-dropdown {
+  z-index: 90;
+  background-color: yellow;
+} 
+
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+  .logo_mobile img {
+    max-height: 40px;
+  }
+
+  .mid.part {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .searchBar {
+    width: 100%;
+  }
+
+  .searchInput {
+    /* background-color: darkcyan; */
+    width: 100%;
+    margin-top: 5%;
+    position: relative;
+  }
+
+  .right.part {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+
+  .buttons {
+    margin-top: 10px;
+  }
+
+  .user-icon-container {
+    margin-left: 0;
+  }
+}

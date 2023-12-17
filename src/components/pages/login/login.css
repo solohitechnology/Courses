@@ -1,0 +1,61 @@
+/* login.css */
+
+.parent_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .login-form {
+    background-color: skyblue;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .login-form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .sign-in-button {
+    background-color: skyblue;
+    color:black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border: 2px solid white ; 
+  }
+  
+  .sign-in-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .sign-in-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .forgot-password-link {
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  /* Add more CSS rules and styles as needed */
+  

@@ -1,0 +1,1623 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.book_container {
+  width: 100vw;
+  height: auto;
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 40px;
+}
+
+.book_container .book_search {
+  background-color: white;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid gray;
+}
+
+.book_container .book_search img {
+  width: 150px;
+  border-radius: 10px;
+  margin-left: 10px;
+  height: 50px;
+}
+
+.search_container {
+  /* background-color: yellow; */
+  width: 50%;
+  height: 70%;
+  position: relative;
+}
+
+.book_container .book_search input {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  border-radius: 20px;
+  border: none;
+  border: 1px solid skyblue;
+  outline: none;
+  padding: 10px;
+  margin-top: 0%;
+  font-weight: 400;
+  font-size: 110%;
+}
+
+.book_container .search-icon {
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  position: absolute;
+  top: 0;
+  right: 5px;
+  cursor: pointer;
+  margin-top: 9px;
+  font-size: 90px;
+  
+}
+
+.book_container .search-icon .icon-search {
+  /* background-color: blue; */
+  font-size: 30px;
+  color: gray;
+  cursor: pointer;
+}
+
+.book_container .search-icon .icon-search:hover {
+  background-color: skyblue;
+  border-radius: 20px;
+}
+
+
+
+.book_container .book_search li {
+  list-style-type: none;
+}
+
+.book_container .book_search li a {
+  background-color: rgb(154, 186, 198);
+  color: white;
+  margin-right: 100px;
+  width: 150px;
+  height: 100px;
+  padding: 10px;
+  padding-top: 5px;
+  border-radius: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.book_container .book_search li a:hover {
+  background-color: skyblue;
+  color: black;
+
+}
+
+.book_container .book_photo {
+  /* background-color: aquamarine; */
+  width: 100%;
+  height: 20vh;
+  background-image: url("../../../../public/lib.jpg");
+}
+
+.book_container h1 {
+color: white;
+/* background-color: yellow; */
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 50px;
+}
+
+.book_container .secound_book_container {}
+
+.book_container .secound_book_container .button_container {
+  background-color: rgb(227, 238, 248);
+  border: 1px solid gray;
+  border-bottom: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 13px;
+  padding-right: 40%;
+  
+}
+
+
+
+.book_container .secound_book_container .button_container li {
+  list-style-type: none;
+}
+
+
+.book_container .secound_book_container .button_container li  a{
+  font-size: 100%;
+  margin: 10px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: rgb(191, 230, 246);
+  width: 190px;
+  cursor: pointer;
+  border: 1px solid gray;
+  color: black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.book_container .secound_book_container .button_container li a:hover {
+  background-color: aliceblue;
+}
+
+
+ .book_container .secound_book_container .button_container li a {
+   color: black;
+} 
+
+.book_container .secound_book_container .lower_book_container {
+  /* background-color: green; */
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  border: 1px solid gray;
+}
+
+.book_container .secound_book_container .lower_book_container .image_book {
+  /* background-color: rgb(79, 85, 148); */
+  height: 500px;
+  width: calc(20% - 0%);
+  margin: 10px;
+  /* border: 3px solid rgb(162, 162, 162); */
+}
+
+.book_container .secound_book_container .lower_book_container .image_book img {
+  width: 100%;
+  height: 80%;
+  border-radius: 5px;
+}
+
+.image_book .book-title {
+  color:  gray;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.book_container
+  .secound_book_container
+  .lower_book_container
+  .image_book
+  .container_details {
+  /* background-color: white; */
+  display: flex;
+  justify-content: space-around;
+  border: 3px solid rgb(162, 162, 162);
+  /* border-top: transparent; */
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: transparent;
+  border-radius: 0px;
+  height: 5%;
+}
+
+.book_container
+  .secound_book_container
+  .lower_book_container
+  .image_book
+  .container_details
+  .book_details {
+  /* background-color: rgb(116, 152, 199); */
+  margin-right: 30px;
+  width: 200px;
+  height: 100px;
+}
+
+.book_container
+  .secound_book_container
+  .lower_book_container
+  .image_book
+  .container_details
+  .details {
+  /* background-color: rgb(91, 171, 93);
+    color: blue; */
+  display: flex;
+  width: 100%;
+  text-align: left;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.book_container
+  .secound_book_container
+  .lower_book_container
+  .image_book
+  .container_details
+  .details
+  span {
+  color: black;
+  font-size: 15px;
+}
+
+.book_container
+  .secound_book_container
+  .lower_book_container
+  .image_book
+  .container_details
+  .details
+  p {
+  color: rgb(98, 98, 98);
+  text-align: left;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0;
+  
+}
+
+.book_container
+  .secound_book_container
+  .lower_book_container
+  .image_book
+  .container_details
+  .view_button {
+  /* background-color: green; */
+  width: 200px;
+  margin: 5px;
+  margin-top: 13px;
+}
+
+.book_container
+  .secound_book_container
+  .lower_book_container
+  .image_book
+  .container_details
+  .view_button
+  button {
+  background-color: rgb(116, 116, 116);
+  border: none;
+  color: white;
+  width: 100px;
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 20px;
+  margin-top: 12px;
+}
+
+
+/* Add these styles to your ebook.css or create a new CSS file for pagination styles */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination a {
+  color: #333;
+  padding: 8px 16px;
+  margin: 0 4px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagination a:hover {
+  background-color: rgb(42, 40, 40);
+  color: whitesmoke;
+}
+
+.pagination .active {
+  /* background-color: #4caf50; */
+  color: white;
+  border: 1px solid ;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination li {
+  margin: 0 5px;
+  display: inline-block;
+  border: none;
+}
+
+.pagination a {
+  color: #007bff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination a:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.pagination .active a {
+  background-color: skyblue;
+  color: #fff;
+  cursor: default;
+}
+
+.pagination a:focus {
+  outline: none;
+  border: none;
+}
+
+.pagination .disabled a {
+  pointer-events: none;
+  color: #ccc;
+  border-color: #ccc;
+}
+
+
+
+@media screen and (max-width: 1280px ) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .book_container {
+    width: 100vw;
+    height: auto;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 40px;
+  }
+  
+  .book_container .book_search {
+    background-color: white;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid gray;
+  }
+  
+  .book_container .book_search img {
+    width: 150px;
+    border-radius: 10px;
+    margin-left: 10px;
+    height: 50px;
+  }
+  
+  .search_container {
+    /* background-color: yellow; */
+    width: 50%;
+    height: 70%;
+    position: relative;
+  }
+  
+  .book_container .book_search input {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid skyblue;
+    outline: none;
+    padding: 10px;
+    margin-top: 0%;
+    font-weight: 400;
+    font-size: 110%;
+    
+  }
+  
+  
+
+  .book_container .search-icon {
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    cursor: pointer;
+    margin-top: 9px;
+    font-size: 90px;
+    
+  }
+
+
+  .book_container .search-icon .icon-search {
+    /* background-color: blue; */
+    font-size: 35px;
+    color: gray;
+    cursor: pointer;
+  }
+  
+  .book_container .search-icon .icon-search:hover {
+    background-color: skyblue;
+    border-radius: 20px;
+  }
+  
+  .book_container .book_search li a {
+    background-color: black;
+    color: white;
+    margin-right: 20px;
+    width: 150px;
+    height: 100px;
+    padding: 10px;
+    padding-top: 13px;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+  }
+  
+  .book_container .book_search li a:hover {
+    background-color: skyblue;
+    color: black;
+  
+  }
+  
+  .book_container .book_photo {
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: 20vh;
+    background-image: url("../../../../public/lib.jpg");
+  }
+  
+  /* .book_container h1 {
+    position: absolute;
+    top: 0;
+    background-color: white;
+    margin-top: 20%;
+    left: 0;
+    margin-left: 30%;
+    width: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 60px;
+    opacity: 0.9;
+  } */
+  
+  .book_container .secound_book_container {}
+  
+  .book_container .secound_book_container .button_container {
+    background-color: rgb(227, 238, 248);
+    border: 1px solid gray;
+    border-bottom: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 13px;
+    padding-right: 30%;
+    
+  }
+  
+  
+  
+  .book_container .secound_book_container .button_container li  a{
+    font-size: 100%;
+    margin: 10px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(191, 230, 246);
+    width: 190px;
+    cursor: pointer;
+    border: 1px solid gray;
+    color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .book_container .secound_book_container .button_container li a:hover {
+    background-color: aliceblue;
+  }
+  
+  
+   .book_container .secound_book_container .button_container li a {
+     color: black;
+  } 
+  
+  .book_container .secound_book_container .lower_book_container {
+    /* background-color: green; */
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    border: 1px solid gray;
+  }
+  
+  .book_container .secound_book_container .lower_book_container .image_book {
+    /* background-color: rgb(79, 85, 148); */
+    height: 500px;
+    width: calc(20% - 0%);
+    margin: 10px;
+    /* border: 3px solid rgb(162, 162, 162); */
+  }
+  
+  .book_container .secound_book_container .lower_book_container .image_book img {
+    width: 100%;
+    height: 65%;
+    border-radius: 5px;
+  }
+  
+  .image_book .book-title {
+    color:  gray;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  
+  .book_container
+  .secound_book_container
+  .lower_book_container
+  .image_book
+  .container_details {
+  /* background-color: white; */
+  display: flex;
+  justify-content: space-around;
+  border: 3px solid rgb(162, 162, 162);
+  /* border-top: transparent; */
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: transparent;
+  border-radius: 0px;
+  height: 5%;
+}
+  
+  .book_container
+    .secound_book_container
+    .lower_book_container
+    .image_book
+    .container_details
+    .book_details {
+    /* background-color: rgb(116, 152, 199); */
+    margin-right: 30px;
+    width: 200px;
+    height: 100px;
+  }
+  
+  .book_container
+    .secound_book_container
+    .lower_book_container
+    .image_book
+    .container_details
+    .details {
+    /* background-color: rgb(91, 171, 93);
+      color: blue; */
+    display: flex;
+    width: 100%;
+    text-align: left;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+  
+  .book_container
+    .secound_book_container
+    .lower_book_container
+    .image_book
+    .container_details
+    .details
+    span {
+    color: black;
+    font-size: 15px;
+  }
+  
+  .book_container
+    .secound_book_container
+    .lower_book_container
+    .image_book
+    .container_details
+    .details
+    p {
+    color: rgb(98, 98, 98);
+    text-align: left;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+    
+  }
+  
+  .book_container
+    .secound_book_container
+    .lower_book_container
+    .image_book
+    .container_details
+    .view_button {
+    /* background-color: green; */
+    width: 200px;
+    margin: 5px;
+    margin-top: 13px;
+  }
+  
+  .book_container
+    .secound_book_container
+    .lower_book_container
+    .image_book
+    .container_details
+    .view_button
+    button {
+    background-color: rgb(116, 116, 116);
+    border: none;
+    color: white;
+    width: 100px;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-top: 12px;
+  }
+  
+  
+  /* Add these styles to your ebook.css or create a new CSS file for pagination styles */
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination a {
+    color: #333;
+    padding: 8px 16px;
+    margin: 0 4px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .pagination a:hover {
+    background-color: rgb(42, 40, 40);
+    color: whitesmoke;
+  }
+  
+  .pagination .active {
+    /* background-color: #4caf50; */
+    color: white;
+    border: 1px solid ;
+  }
+  
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+  
+.book_container {
+  width: 100vw;
+  height: auto;
+  background-color: rgb(218, 232, 244);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+  .book_container .book_search {
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid gray;
+  }
+  
+  .book_container .book_search img {
+    width: 50px;
+    border-radius: 10px;
+    margin-left: 0px;
+    height: 50px;
+    /* display: none; */
+  }
+    
+  .search_container {
+    /* background-color: yellow; */
+    width: 50%;
+    height: 50%;
+    position: relative;
+  }
+  
+  .book_container .book_search input {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid skyblue;
+    outline: none;
+    padding: 10px;
+    margin-top: 0%;
+    font-weight: 400;
+    font-size: 80%;
+  }
+  
+  
+
+  
+.book_container .book_search li a {
+  background-color: black;
+  color: white;
+  margin-right: 5px;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 12px;
+  display: none;
+}
+
+
+  .book_container .search-icon {
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    margin-top: 9px;
+    font-size: 90px;
+    margin-left: 100%;
+    display: none;
+  }
+  
+  .book_container .search-icon .icon-search {
+    /* background-color: blue; */
+    font-size: 35px;
+    color: gray;
+    cursor: pointer;
+  }
+
+  
+
+  .book_container .book_photo {
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: 20vh;
+    background-image: url("../../../../public/lib.jpg");
+  }
+  
+  .book_container h1 {
+  color: white;
+  /* background-color: yellow; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  }
+  
+/* 
+.book_container h1 {
+  position: absolute;
+  top: 0;
+  background-color: transparent;
+  margin-top: 85%;
+  left: 0;
+  margin-left: 5%;
+  width: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-size: 40px;
+  opacity: 0.9;
+  color: aliceblue;
+} */
+
+
+.book_container .secound_book_container .button_container {
+  background-color: rgb(227, 238, 248);
+  border: 1px solid gray;
+  border-bottom: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 13px;
+  padding-right: 0px;
+  
+}
+
+
+
+.book_container .secound_book_container .button_container li  a{
+  font-size: 10px;
+  margin: 10px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: rgb(191, 230, 246);
+  width: 100px;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid gray;
+  color: black;
+  padding: 10px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.book_container .secound_book_container .lower_book_container {
+  /* background-color: green; */
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2px;
+  border: 3px solid green;
+}
+
+.book_container .secound_book_container .lower_book_container .image_book {
+  /* background-color: rgb(79, 85, 148); */
+  height: 200px;
+  width: 40%;
+  margin: 3px;
+  margin-top: 10px;
+}
+
+.book_container .secound_book_container .lower_book_container .image_book img {
+  width: 100%;
+  height: 90%;
+  border-radius: 15px;
+}
+.book_container
+  .secound_book_container
+  .lower_book_container
+  .image_book
+  .container_details {
+  /* background-color: white; */
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid rgb(162, 162, 162);
+  /* border-top: transparent; */
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: transparent;
+  border-radius: 0px;
+  height: 5%;
+}
+
+.book-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100px; /* Adjust the max-width based on your design */
+}
+
+
+.book_container
+  .secound_book_container
+  .lower_book_container
+  .image_book
+  .container_details
+  .book_details {
+  /* background-color: rgb(116, 152, 199); */
+  margin-right: 0px;
+  /* margin-bottom: 100px; */
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-top: 5px;
+  width: 80px;
+  height: 100px;
+  position: relative;
+}
+
+.book_container
+  .secound_book_container
+  .lower_book_container
+  .image_book
+  .container_details
+  .details {
+  /* background-color: rgb(91, 171, 93);
+    color: blue; */
+  display: flex;
+  width: 80%;
+  height: 15px;
+  text-align: left;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.book_container
+  .secound_book_container
+  .lower_book_container
+  .image_book
+  .container_details
+  .details
+  span {
+  color: black;
+  font-size: 9px;
+}
+
+.book_container
+  .secound_book_container
+  .lower_book_container
+  .image_book
+  .container_details
+  .details
+  p {
+  color: black;
+  text-align: left;
+  font-size: 9px;
+  margin: 0;
+  
+}
+
+.book_container
+  .secound_book_container
+  .lower_book_container
+  .image_book
+  .container_details
+  .view_button {
+  /* background-color: green; */
+  width: 100px;
+  margin: 0px;
+  margin-top: 0px;
+}
+
+.book_container
+  .secound_book_container
+  .lower_book_container
+  .image_book
+  .container_details
+  .view_button
+  button {
+  background-color: transparent;
+  border: none;
+  color: black;
+  width: 60px;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 20px;
+  margin-top: 0px;
+}
+
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 438px) {
+
+  
+  .book_container {
+    width: 100vw;
+    height: auto;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+
+  .book_container .book_search {
+    background-color: white;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid gray;
+  }
+  
+  .book_container .book_search img {
+    width: 50px;
+    border-radius: 10px;
+    margin-left: 0px;
+    height: 50px;
+    /* display: none; */
+  }
+    
+  .search_container {
+    /* background-color: yellow; */
+    width: 50%;
+    height: 50%;
+    position: relative;
+  }
+  
+  .book_container .book_search input {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid skyblue;
+    outline: none;
+    padding: 10px;
+    margin-top: 0%;
+    font-weight: 400;
+    font-size: 80%;
+  }
+  
+  
+    
+  .book_container .book_search li a {
+    background-color: black;
+    color: white;
+    margin-right: 5px;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12px;
+    display: none;
+  }
+  
+  
+    .book_container .search-icon {
+      /* background-color: yellow; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: auto;
+      position: absolute;
+      top: 0;
+      cursor: pointer;
+      margin-top: 9px;
+      font-size: 90px;
+      margin-left: 100%;
+      display: none;
+    }
+    
+    .book_container .search-icon .icon-search {
+      /* background-color: blue; */
+      font-size: 35px;
+      color: gray;
+      cursor: pointer;
+    }
+  
+    
+
+    .book_container .book_photo {
+      /* background-color: aquamarine; */
+      width: 100%;
+      height: 20vh;
+      background-image: url("../../../../public/lib.jpg");
+    }
+
+
+  /* .book_container h1 {
+    position: none;
+    top: 0;
+    background-color: transparent;
+    margin-top: 60%;
+    left: 0;
+    margin-left: 5%;
+    width: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 40px;
+    opacity: 0.9;
+    color: whitesmoke;
+  } */
+  
+  
+  .book_container .secound_book_container .button_container {
+    background-color: rgb(227, 238, 248);
+    border: 1px solid gray;
+    border-bottom: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 13px;
+    padding-right: 0px;
+    
+  }
+  
+  
+  
+  .book_container .secound_book_container .button_container li  a{
+    font-size: 10px;
+    margin: 10px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(191, 230, 246);
+    width: 100px;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid gray;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .book_container .secound_book_container .lower_book_container {
+    /* background-color: green; */
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2px;
+    border: 1px solid gray;
+  }
+  
+  .book_container .secound_book_container .lower_book_container .image_book {
+    /* background-color: rgb(79, 85, 148); */
+    height: 200px;
+    width: 40%;
+    margin: 3px;
+    margin-top: 10px;
+  }
+  
+  .book_container .secound_book_container .lower_book_container .image_book img {
+    width: 100%;
+    height: 90%;
+    border-radius: 15px;
+  }
+  .book_container
+    .secound_book_container
+    .lower_book_container
+    .image_book
+    .container_details {
+    /* background-color: white; */
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid rgb(162, 162, 162);
+    /* border-top: transparent; */
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: transparent;
+    border-radius: 0px;
+    height: 5%;
+  }
+  
+  .book-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100px; /* Adjust the max-width based on your design */
+  }
+  
+  
+  .book_container
+    .secound_book_container
+    .lower_book_container
+    .image_book
+    .container_details
+    .book_details {
+    /* background-color: rgb(116, 152, 199); */
+    margin-right: 0px;
+    /* margin-bottom: 100px; */
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-top: 5px;
+    width: 80px;
+    height: 100px;
+    position: relative;
+  }
+  
+  .book_container
+    .secound_book_container
+    .lower_book_container
+    .image_book
+    .container_details
+    .details {
+    /* background-color: rgb(91, 171, 93);
+      color: blue; */
+    display: flex;
+    width: 80%;
+    height: 15px;
+    text-align: left;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+  
+  .book_container
+    .secound_book_container
+    .lower_book_container
+    .image_book
+    .container_details
+    .details
+    span {
+    color: black;
+    font-size: 9px;
+  }
+  
+  .book_container
+    .secound_book_container
+    .lower_book_container
+    .image_book
+    .container_details
+    .details
+    p {
+    color: black;
+    text-align: left;
+    font-size: 9px;
+    margin: 0;
+    
+  }
+  
+  .book_container
+    .secound_book_container
+    .lower_book_container
+    .image_book
+    .container_details
+    .view_button {
+    /* background-color: green; */
+    width: 100px;
+    margin: 0px;
+    margin-top: 0px;
+  }
+  
+  .book_container
+    .secound_book_container
+    .lower_book_container
+    .image_book
+    .container_details
+    .view_button
+    button {
+    background-color: transparent;
+    border: none;
+    color: black;
+    width: 60px;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 20px;
+    margin-top: 0px;
+  }
+  
+  
+  }
+  
+  
+
+  
+
+
+@media screen and (max-width: 370px) {
+
+  
+  .book_container {
+    width: 100vw;
+    height: auto;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+    .book_container .book_search {
+      background-color: white;
+      width: 100%;
+      height: 70px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border: 1px solid gray;
+    }
+    
+    .book_container .book_search img {
+      width: 50px;
+      border-radius: 10px;
+      margin-left: 0px;
+      height: 50px;
+      /* display: none; */
+    }
+    
+    .search_container {
+      /* background-color: yellow; */
+      width: 50%;
+      height: 50%;
+      position: relative;
+    }
+    
+    .book_container .book_search input {
+      width: 100%;
+      height: 100%;
+      font-size: 20px;
+      border-radius: 20px;
+      border: none;
+      border: 1px solid skyblue;
+      outline: none;
+      padding: 10px;
+      margin-top: 0%;
+      font-weight: 400;
+      font-size: 50%;
+    }
+    
+  
+    
+  .book_container .book_search li a {
+    background-color: black;
+    color: white;
+    margin-right: 5px;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12px;
+    display: none;
+  }
+  
+  
+    .book_container .search-icon {
+      /* background-color: yellow; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: auto;
+      position: absolute;
+      top: 0;
+      cursor: pointer;
+      margin-top: 9px;
+      font-size: 90px;
+      margin-left: 100%;
+      display: none;
+    }
+    
+    .book_container .search-icon .icon-search {
+      /* background-color: blue; */
+      font-size: 35px;
+      color: gray;
+      cursor: pointer;
+    }
+  
+    
+
+    .book_container .book_photo {
+      /* background-color: aquamarine; */
+      width: 100%;
+      height: 20vh;
+      background-image: url("../../../../public/lib.jpg");
+    }
+    
+    .book_container h1 {
+    color: white;
+    /* background-color: yellow; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    }
+    
+  
+  /* .book_container h1 {
+    position: none;
+    top: 0;
+    background-color: transparent;
+    margin-top: 60%;
+    left: 0;
+    margin-left: 5%;
+    width: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 40px;
+    opacity: 0.9;
+    color: whitesmoke;
+  } */
+  
+  
+  .book_container .secound_book_container .button_container {
+    background-color: rgb(227, 238, 248);
+    border: 1px solid gray;
+    border-bottom: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 13px;
+    padding-right: 0px;
+    
+  }
+  
+  
+  
+  .book_container .secound_book_container .button_container li  a{
+    font-size: 10px;
+    margin: 10px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(191, 230, 246);
+    width: 100px;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid gray;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .book_container .secound_book_container .lower_book_container {
+    /* background-color: green; */
+    height: 95vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2px;
+    border: 1px solid gray;
+  }
+  
+  .book_container .secound_book_container .lower_book_container .image_book {
+    /* background-color: rgb(79, 85, 148); */
+    height: 200px;
+    width: 40%;
+    margin: 3px;
+    margin-top: 10px;
+  }
+  
+  .book_container .secound_book_container .lower_book_container .image_book img {
+    width: 100%;
+    height: 90%;
+    border-radius: 15px;
+  }
+  .book_container
+    .secound_book_container
+    .lower_book_container
+    .image_book
+    .container_details {
+    /* background-color: white; */
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid rgb(162, 162, 162);
+    /* border-top: transparent; */
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: transparent;
+    border-radius: 0px;
+    height: 5%;
+  }
+  
+  .book-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100px; /* Adjust the max-width based on your design */
+  }
+  
+  
+  .book_container
+    .secound_book_container
+    .lower_book_container
+    .image_book
+    .container_details
+    .book_details {
+    /* background-color: rgb(116, 152, 199); */
+    margin-right: 0px;
+    /* margin-bottom: 100px; */
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-top: 5px;
+    width: 80px;
+    height: 100px;
+    position: relative;
+  }
+  
+  .book_container
+    .secound_book_container
+    .lower_book_container
+    .image_book
+    .container_details
+    .details {
+    /* background-color: rgb(91, 171, 93);
+      color: blue; */
+    display: flex;
+    width: 80%;
+    height: 15px;
+    text-align: left;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+  
+  .book_container
+    .secound_book_container
+    .lower_book_container
+    .image_book
+    .container_details
+    .details
+    span {
+    color: black;
+    font-size: 9px;
+  }
+  
+  .book_container
+    .secound_book_container
+    .lower_book_container
+    .image_book
+    .container_details
+    .details
+    p {
+    color: black;
+    text-align: left;
+    font-size: 9px;
+    margin: 0;
+    
+  }
+  
+  .book_container
+    .secound_book_container
+    .lower_book_container
+    .image_book
+    .container_details
+    .view_button {
+    /* background-color: green; */
+    width: 100px;
+    margin: 0px;
+    margin-top: 0px;
+  }
+  
+  .book_container
+    .secound_book_container
+    .lower_book_container
+    .image_book
+    .container_details
+    .view_button
+    button {
+    background-color: transparent;
+    border: none;
+    color: black;
+    width: 60px;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 20px;
+    margin-top: 0px;
+  }
+  
+  
+  }
+  
+  

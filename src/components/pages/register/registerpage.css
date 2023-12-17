@@ -1,0 +1,32 @@
+.parent_register_form {
+    /* background-color: royalblue; */
+}
+
+.parent_register_form form {
+    width: 500px;
+    height: auto;
+    /* background: green; */
+    float: right;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.parent_register_form form input {
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+
+
+
+@media screen and (max-width: 590px) {
+    .parent_register_form form {
+        margin-top: 30%;
+    }
+
+    .parent_register_form form input {
+   width: 300px;
+    }
+}

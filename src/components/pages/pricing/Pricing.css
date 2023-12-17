@@ -1,0 +1,98 @@
+/* Pricing Page Styles */
+.pricing-page {
+  text-align: center;
+  margin-top: 100px;
+  padding: 20px;
+}
+
+.pricing-page h1 {
+  font-size: 2.5rem;
+  background-color: skyblue;
+  margin-left: 200px;
+  margin-right: 200px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.pricing-page p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Plans Styles */
+.plans {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.plan {
+  flex: 1;
+  max-width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.plan h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.plan h3 {
+  font-size: 1.2rem;
+  color: gray;
+  margin-bottom: 15px;
+}
+
+.plan ul {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.plan ul li {
+  margin: 5px 0;
+}
+
+.plan button {
+  background-color: skyblue;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.plan button:hover {
+  background-color: whitesmoke;
+  border: 1px solid skyblue;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+
+  .pricing-page {
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plans {
+    flex-direction: column;
+  }
+
+  .plan {
+    width: 100vw;
+  }
+}

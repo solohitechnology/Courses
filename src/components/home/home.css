@@ -1,0 +1,16 @@
+/* Add this CSS to your stylesheet or as a style tag */
+.featured-image {
+    height: 200px; /* Set the desired height */
+    object-fit: cover; /* Ensure the image covers the specified height without stretching */
+  }
+  
+
+  .custom-button {
+    background-color: lightblue; 
+    color: white; 
+  }
+  
+
+  .flex_button {
+    flex-direction: column;
+  }

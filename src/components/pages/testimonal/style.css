@@ -1,0 +1,91 @@
+/* Add this CSS to your "style.css" file */
+
+/* Testimonials container */
+.testimonials-p {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  overflow-y: hidden;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* Testimonials header */
+.testimonials-h {
+  overflow-y: hidden;
+  margin-bottom: 40px;
+}
+
+.testimonials-h h1 {
+  font-size: 28px;
+  color: gray;
+  font-family: system-ui;
+  margin-bottom: 10px;
+}
+
+.testimonials-h p {
+  font-size: 16px;
+  color: #777;
+}
+
+/* Slider container */
+.slick-slider {
+  position: relative;
+}
+
+/* Testimonial card */
+.testimonial-c {
+  background-color: rgb(165, 212, 231);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  overflow-y: hidden;
+  max-width: 300px;
+  margin: 0 auto;
+  height: 500px;
+  padding: 20px;
+  text-align: left;
+}
+
+.testimonial-c:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-image {
+  height: 100px;
+}
+
+/* Testimonial image */
+.testimonial-i {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  float: left;
+  margin-right: 20px;
+}
+
+/* Testimonial quote */
+.testimonial-c p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Testimonial author */
+.testimonial-a {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Testimonial position */
+.testimonial-p {
+  font-size: 14px;
+  color: #777;
+}
+
+h1,
+h3 {
+  color: gray;
+  font-family: sans-serif;
+}

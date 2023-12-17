@@ -1,0 +1,104 @@
+/* details.css */
+
+/* Common styles for all screen sizes */
+
+.custom-details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.custom-details-box {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 20px;
+}
+
+.custom-details-image {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.custom-details-title {
+  font-size: 24px;
+  margin: 16px 0;
+}
+
+.custom-details-markdown {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.custom-details-date {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+.custom-details-icon {
+  margin-right: 8px;
+}
+
+.custom-details-label {
+  font-weight: bold;
+}
+
+.custom-details-author {
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+/* Media query for screens smaller than 768px (e.g., mobile phones) */
+@media (max-width: 768px) {
+  .custom-details-box {
+    /* margin: 0 10px; */
+    margin-left: 0px;
+    margin-right: 74px;
+    width: 90%;
+  }
+
+  .custom-details-title {
+    font-size: 20px;
+  }
+
+  .custom-details-markdown {
+    font-size: 14px;
+  }
+}
+
+/* Media query for screens smaller than 480px (e.g., smaller mobile phones) */
+@media (max-width: 480px) {
+  
+.custom-details-container {
+  /* background-color: yellow; */
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+.custom-details-container .custom-details-box {
+  /* background-color: blue; */
+  /* width: 100px; */
+  margin-right: 0px;
+} 
+
+
+  .custom-details-title {
+    font-size: 18px;
+  }
+
+  .custom-details-markdown {
+    font-size: 12px;
+  }
+}

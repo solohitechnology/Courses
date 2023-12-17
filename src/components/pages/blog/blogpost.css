@@ -1,0 +1,110 @@
+/* Existing styles for .blog */
+
+.blog {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100vw;
+}
+
+.blog .container {
+  background-color: blue;
+}
+
+.blog .boxItems {
+  transition: 0.5s;
+  width: 500px;
+  box-shadow: 0 2px 4px rgba(11, 11, 11, 0.3);
+}
+
+.blog .boxItems:hover {
+  box-shadow: 0 2px 4px rgb(0 0 0 / 30%);
+  cursor: pointer;
+  transform: translateY(-5px);
+}
+
+.blog img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.blog .details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.blog .icon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.blog .tags {
+  display: flex;
+  gap: 10px;
+}
+
+.blog .tag a {
+  border: 2px solid var(--primary-color);
+  background: var(--primary-color);
+  border-radius: 15px;
+  padding: 1px 8px;
+  font-size: 12px;
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+.blog h3 {
+  font-weight: 500;
+  font-size: 20px;
+  color: gray;
+  margin: 10px;
+  
+}
+
+.blog p {
+  /* color: var(--jetblack-color); */
+  font-weight: 400;
+  font-size: 15px;
+  text-align: justify;
+  line-height: 25px;
+  color: gray;
+  margin: 10px;
+}
+
+.blog .date {
+  display: flex;
+  justify-content: flex-end;
+  color: gray;
+  margin: 10px;
+}
+
+.blog li {
+  list-style-type: none;
+  
+}
+
+
+.blog li a {
+  text-decoration: none;
+
+}
+
+/* Media query for screens smaller than 768px (e.g., tablets and small laptops) */
+@media (max-width: 768px) {
+  .blog .boxItems {
+    width: 79%; /* Adjust the width to fit the smaller screen */
+    margin-left: 0; /* Remove margin for full width */
+  }
+}
+
+/* Media query for screens smaller than 480px (e.g., smaller mobile phones) */
+@media (max-width: 480px) {
+  .blog {
+    margin: 20px; /* Reduce the margin for smaller screens */
+  }
+}

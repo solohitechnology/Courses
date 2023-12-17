@@ -137,7 +137,7 @@ const Ebook = () => {
             {currentBooks.map((book, index) => (
 
               <div className="image_book" key={index}>
-                <Link to={`/books/single/${book._id}`}>
+                <Link to={`https://ogenduacademy.com/books/single/${book._id}`}>
                   <img src={`https://ogenduacademy.com/uploads/${book.picture}`} alt={book.title} />
 
                 </Link>

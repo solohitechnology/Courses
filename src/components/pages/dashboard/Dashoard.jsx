@@ -105,7 +105,8 @@ function Dashboard() {
           </nav>
         </Row>
       </Container>
-       <CopyStudentsViewingContainer /> 
+       <CopyStudentsViewingContainer />
+        
     </>
   );
 }

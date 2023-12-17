@@ -30,17 +30,17 @@ class ErrorBoundary extends React.Component {
 
 const staticSeminars = [
   {
-    _id: '1',
+    _id: '650816ef87cfc8f3bbc41d8a',
     title: 'Sample Seminar 1',
     picture: { filename: 'p2.jpeg' },
   },
   {
-    _id: '2',
+    _id: '650816ef87cfc8f3bbc41d8a',
     title: 'Sample Seminar 2',
     picture: { filename: 'p2.jpeg' },
   },
   {
-    _id: '2',
+    _id: '650816ef87cfc8f3bbc41d8a',
     title: 'Sample Seminar 2',
     picture: { filename: 'p2.jpeg' },
   },

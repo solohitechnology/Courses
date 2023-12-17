@@ -11,6 +11,7 @@ import Testimonial from '../pages/testimonal/Testimonal';
 import SeminarList from '../pages/seminar/GetSeminar';
 import BlogPost from '../pages/blog/BlogPost';
 import Awrapper from '../pages/Wrapper/Wrapper';
+import CopyStudentsViewingContainer from '../pages/courses/Courses';
 
 
 
@@ -50,21 +51,21 @@ const Home = () => {
         {
             id: 1,
             title: 'Books & Library',
-            imageSrc: 'https://static01.nyt.com/images/2018/06/03/books/review/03GLASSIE-SUB/03GLASSIE-SUB-superJumbo.jpg',
+            imageSrc: 'al.jpg',
             description: 'At , we believe in the magic of books and the transformative power of reading. Step into a world of imagination, knowledge, and discovery as we invite you to explore our extensive collection of literary treasures.',
             url: '/books-library', // Example URL for Books & Library
         },
         {
             id: 2,
             title: 'Special education',
-            imageSrc: 'https://i0.wp.com/calmatters.org/wp-content/uploads/2020/03/ClaireLazaroFamily_specialneeds_courtesy_01.jpg?resize=780%2C579&ssl=1',
+            imageSrc: '/st1.webp',
             description: 'Teachers are trained to provide specialized instruction tailored to the individual needs of students with disabilities. This may involve modified teaching methods, adapted materials, assistive technology, and additional support services.',
             url: '/special-education', // Example URL for Special Education
         },
         {
             id: 3,
             title: 'Certified Educators',
-            imageSrc: 'https://cdn.vanderbilt.edu/vu-news/files/20190417220953/iStock-AC-teachers-vs-TC-teachers.jpg',
+            imageSrc: 'teacher.jpg',
             description: 'At OGENDU ACADEMY, we take pride in providing top-notch education led by a team of highly qualified and certified teachers. Our commitment to excellence ensures that anyone receives the best possible learning experience.',
             url: '/certified-educators', // Example URL for Certified Educators
         },
@@ -148,19 +149,16 @@ const Home = () => {
                     </Card>
 
                     <Container className="mb-5">
-                        <h2 style={{ fontFamily: "sans-serif", margin: "20px" }} className="text-center">We also offer</h2>
+                        <h2 style={{ fontFamily: "sans-serif", margin: "20px", marginTop:"3%"  }} className="text-center">We also offer</h2>
                         <Row>
                             {/* Map through the array of featured courses */}
                             {featuredCourses.map(course => (
-                                <Col md={4} key={course.id}>
+                                <Col md={4} key={course.id} style={{marginTop:"3%"}}>
                                     <Card>
                                         <Card.Img variant="top" src={course.imageSrc} className="featured-image" />
                                         <Card.Body>
                                             <Card.Title>{course.title}</Card.Title>
                                             <Card.Text>{course.description}</Card.Text>
-                                            <Button style={{ background: "skyblue", color: "black", border: "none", margin: "5px" }} href={course.url}>
-                                                View
-                                            </Button>
                                         </Card.Body>
                                     </Card>
                                 </Col>
@@ -172,6 +170,7 @@ const Home = () => {
             <SeminarList />
             <Awrapper />
             <Testimonial />
+            <CopyStudentsViewingContainer />
             <BlogPost />
             <Pricing />
             <Faq />

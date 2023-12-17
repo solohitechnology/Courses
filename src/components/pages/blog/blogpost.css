@@ -5,7 +5,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 100vw;
+  width: 100%;
 }
 
 .blog .container {
@@ -108,3 +108,8 @@
     margin: 20px; /* Reduce the margin for smaller screens */
   }
 }
+
+
+
+
+

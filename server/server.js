@@ -4,6 +4,7 @@ const express = require('express');
 const helmet = require('helmet');
 const mongoose = require('mongoose');
 const path = require('path');
+const courses = require('./route/courses');
 const bodyParser = require('body-parser');
 const addnewbook = require('./route/newbook')
 const authRoute = require('./route/auth');
@@ -42,7 +43,7 @@ app.use(helmet());
 
 const allowedOrigins = [
   'http://localhost:3000', // Allow requests from localhost:3000
-  // Add other allowed origins here
+  
 ];
 
 app.use(cors({
@@ -53,17 +54,18 @@ app.use(cors({
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Define your routes
+
+app.use('/api', courses)
+app.use('/api/allbook', addnewbook);
+app.use('/api/blog', blogpostRoute);
+app.use('/api/sub/', subscription);
 app.use('/api/auth/', authRoute);
 app.use('/api/cert', certificate);
 app.use('/api/video', videoUpload);
 app.use('/api/testimo', Testimonial);
-app.use('/api/blog', blogpostRoute);
 app.use('/api/paystack', paymentRoute);
 app.use('/api/confrence', serminarRoute);
 //app.use('/api/books', uploadbookRoutes);
-app.use('/api/allbook', addnewbook);
-app.use('/api/sub/', subscription);
 
 
 
@@ -86,7 +88,7 @@ app.use((req, res, next) => {
   currentWorker = (currentWorker + 1) % numWorkers;
 });
 
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 5000;
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });

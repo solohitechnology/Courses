@@ -34,7 +34,7 @@ const SingleBook = () => {
   useEffect(() => {
     const fetchBookDetails = async () => {
       try {
-        const response = await axios.get(`/api/allbook/single-book/${id}`);
+        const response = await axios.get(`http://ogenduacademy.com/api/allbook/single-book/${id}`);
         setBook(response.data);
       } catch (error) {
         console.error(`Error fetching book details: ${error.message}`);

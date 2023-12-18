@@ -1,8 +1,23 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 // import { Helmet } from 'react-helmet';
 import './Pricing.css';
 
 const Pricing = () => {
+
+  useEffect(() => {
+    // Function to scroll to the top of the page
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth', // Use 'smooth' for a smooth scrolling effect
+      });
+    };
+
+    // Scroll to the top when the component mounts
+    scrollToTop();
+  }, []);
+
+
   const plans = [
     {
       title: 'Basic Plan',

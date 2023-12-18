@@ -36,7 +36,7 @@ function HeaderPrimary() {
               />
               <div className="searchIcon">
                 <SearchOutlinedIcon className="icon" />
-              </div>
+              </div> 
             </Form>
             <Nav className="links_nav">
               <Nav.Link href="/login">Get Started</Nav.Link>
@@ -46,6 +46,7 @@ function HeaderPrimary() {
                 <NavDropdown.Item href="#">Webinars</NavDropdown.Item>
                 <NavDropdown.Item href="#">Workshops</NavDropdown.Item>
                 <NavDropdown.Item href="#">Conferences</NavDropdown.Item>
+                <NavDropdown.Item href="/booklist">Free E-Books</NavDropdown.Item>
                 <NavDropdown.Item href="#">Upcoming Events</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#">Course Creation</NavDropdown.Item>

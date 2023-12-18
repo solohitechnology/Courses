@@ -95,8 +95,8 @@ const Ebook = () => {
 
       <div className="book_container">
         <div className="book_search">
-        <div>
-        <img src={images[currentImageIndex]} alt="" />
+          <div>
+            <img src={images[currentImageIndex]} alt="" />
           </div>
           <div className='search_container'>
             <input
@@ -127,17 +127,19 @@ const Ebook = () => {
             <li>
               <a onClick={() => fetchBooks('/api/allbook/latest-books')} >New Book</a>
             </li>
-      
+
             <li>
               <a onClick={() => fetchBooks('/api/allbook/trending')}>Trending</a>
             </li>
+
+            
 
           </div>
           <div className="lower_book_container">
             {currentBooks.map((book, index) => (
 
               <div className="image_book" key={index}>
-                <Link to={`https://ogenduacademy.com/books/single/${book._id}`}>
+                <Link to={`/books/single/${book._id}`}>
                   <img src={`https://ogenduacademy.com/uploads/${book.picture}`} alt={book.title} />
 
                 </Link>
@@ -160,7 +162,9 @@ const Ebook = () => {
           </div>
         </div>
         <Catigories />
+    
       </div>
+
     </>
   );
 };

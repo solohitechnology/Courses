@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './seminar.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import axios from 'axios'
 import { Helmet } from 'react-helmet';
 
 class ErrorBoundary extends React.Component {
@@ -26,30 +27,29 @@ class ErrorBoundary extends React.Component {
 
     return this.props.children;
   }
-}
+};
 
-const staticSeminars = [
-  {
-    _id: '650816ef87cfc8f3bbc41d8a',
-    title: 'Sample Seminar 1',
-    picture: { filename: 'p2.jpeg' },
-  },
-  {
-    _id: '650816ef87cfc8f3bbc41d8a',
-    title: 'Sample Seminar 2',
-    picture: { filename: 'p2.jpeg' },
-  },
-  {
-    _id: '650816ef87cfc8f3bbc41d8a',
-    title: 'Sample Seminar 2',
-    picture: { filename: 'p2.jpeg' },
-  },
-  // Add more static seminar data as needed
-];
+
 
 const SeminarList = () => {
-  const [seminars, setSeminars] = useState(staticSeminars);
+
+  const [seminars, setSeminars] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(async () => {
+  try {
+    const response = await axios.get('http://localhost:5000/api/confrence/seminar');
+    setSeminars(response.data);
+    console.log(response)
+  } catch (error) {
+    console.error('Error fetching seminars:', error);
+  } finally {
+    setIsLoading(false);
+  }
+
+  AOS.init({ duration: 1000 });
+}, []); 
+
 
   useEffect(() => {
     AOS.init({ duration: 1000 });

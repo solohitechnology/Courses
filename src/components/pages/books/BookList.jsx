@@ -1,52 +1,54 @@
-// BookList.js
-import React, {useState} from 'react';
-import { Container, Row, Col, Form } from 'react-bootstrap';
+import React, { useState, useEffect } from 'react';
+import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import axios from 'axios';
 import FreeBook from './FreeBooks';
 
-const books = [
-  {
-    id: 1,
-    title: 'The Art of Programming',
-    author: 'John Coder',
-    description: 'Dive into the world of programming with this comprehensive guide. Learn best practices, design patterns, and master the art of writing efficient code.',
-    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_8CQ4wWSqtk0fKl_gD4qc0pFohLu2etmgwQ&usqp=CAU',
-  },
-  {
-    id: 2,
-    title: 'Data Science Essentials',
-    author: 'Alice Scientist',
-    description: 'Explore the fundamentals of data science and machine learning. This book covers data analysis, statistical modeling, and practical applications in real-world scenarios.',
-    imageUrl: 'https://i0.wp.com/pctechmag.com/wp-content/uploads/2022/05/Data-Science.jpg?fit=1200%2C675&ssl=1',
-  },
-  {
-    id: 3,
-    title: 'Financial Freedom Handbook',
-    author: 'Emma Investor',
-    description: 'Unlock the secrets to financial success and independence. Discover investment strategies, budgeting tips, and practical advice to achieve your financial goals.',
-    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIT3ojCAJGOuLpDWHrvxW88rP58fx_rccABQ&usqp=CAU',
-  },
-  {
-    id: 4,
-    title: 'The Art of Storytelling',
-    author: 'Olivia Author',
-    description: 'Master the art of storytelling and captivate your audience. This book covers narrative techniques, character development, and the essentials of creating compelling stories.',
-    imageUrl: 'https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1373329529i/18167392.jpg',
-  },
-];
 const BookList = () => {
   const [searchTerm, setSearchTerm] = useState('');
+  const [books, setBooks] = useState([]);
 
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);
+  };
+
+  useEffect(() => {
+    // Fetch books from the server when the component mounts
+    fetchBooks();
+  }, []);
+
+  const fetchBooks = async () => {
+    try {
+      const response = await axios.get('http://localhost:5000/api/books/allbook');
+      setBooks(response.data);
+    } catch (error) {
+      console.error('Error fetching books:', error);
+    }
   };
 
   const filteredBooks = books.filter((book) =>
     book.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+  const handleDownload = (pdfUrl, title) => {
+    // Create a link element
+    const link = document.createElement('a');
+    link.href = `http://localhost:5000/api/books/download/${encodeURIComponent(pdfUrl)}`;
+    link.download = `${title.replace(/ /g, '_')}.pdf`; // Replace spaces with underscores
+  
+    // Append the link to the document
+    document.body.appendChild(link);
+  
+    // Trigger a click on the link to start the download
+    link.click();
+  
+    // Remove the link from the document
+    document.body.removeChild(link);
+  };
+  
+
   return (
     <Container>
-        <br />
+      <br />
       <Form className="mb-3">
         <Form.Control
           type="text"
@@ -59,6 +61,9 @@ const BookList = () => {
         {filteredBooks.map((book) => (
           <Col key={book.id}>
             <FreeBook {...book} />
+            <Button variant="primary" onClick={() => handleDownload(book.pdfUrl, book.title)}>
+              Download PDF
+            </Button>
           </Col>
         ))}
       </Row>

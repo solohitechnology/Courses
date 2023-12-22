@@ -22,6 +22,7 @@ import StudentSupport from './components/pages/studentSupport/StudentSupport';
 import ApplyInstructor from './components/pages/becomeAnInstructor/ApplyInstructor';
 import BecomeInstructor from './components/pages/becomeAnInstructor/BecomeInstructor';
 import InstructorSupport from './components/pages/instructorSupport/InstructorSupport';
+import BookUploadForm from './components/pages/books/BookuploadForm';
 import './App.css'
 
 
@@ -54,6 +55,7 @@ function App() {
         <Route path='/applyinstructor' element={<ApplyInstructor /> } />
         <Route path='/AffiliateProgram' element={<AffiliateProgram />} />
         <Route path='/BecomeInstructor' element={<BecomeInstructor /> } />
+        <Route path='uploadfreebook' element={ <BookUploadForm />  } /> 
         <Route path='/instructorSupport' element={<InstructorSupport /> } />
      
       </Routes>

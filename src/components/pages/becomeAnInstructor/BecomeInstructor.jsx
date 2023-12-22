@@ -2,6 +2,8 @@ import React,{useEffect} from 'react';
 import './BecomeInstructor.css';
 
 const BecomeInstructor = () => {
+  
+  
   useEffect(() => {
     // Function to scroll to the top of the page
     const scrollToTop = () => {

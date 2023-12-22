@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 const path = require('path');
 const courses = require('./route/courses');
 const bodyParser = require('body-parser');
+const Booklist = require('./route/Booklist');
 const addnewbook = require('./route/newbook')
 const authRoute = require('./route/auth');
 const blogpostRoute = require('./route/blog');
@@ -56,6 +57,7 @@ app.use(express.urlencoded({ extended: true }));
 
 
 app.use('/api', courses)
+app.use('/api/books', Booklist)
 app.use('/api/allbook', addnewbook);
 app.use('/api/blog', blogpostRoute);
 app.use('/api/sub/', subscription);

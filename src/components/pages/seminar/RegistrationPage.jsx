@@ -18,17 +18,16 @@ const RegistrationPage = () => {
 
   const [isRegistering, setIsRegistering] = useState(false);
 
-  useEffect(() => {
-    const fetchSeminar = async () => {
+  useEffect( async () => {
+  
       try {
-        const response = await axios.get(`https://ogenduacademy.com/api/confrence/seminar/${id}`);
+        const response = await axios.get(`/api/confrence/seminar/${id}`);
         setSeminar(response.data);
       } catch (error) {
         console.error('Error fetching seminar:', error);
       }
-    };
+    
 
-    fetchSeminar();
   }, [id]);
 
 
@@ -51,7 +50,7 @@ const RegistrationPage = () => {
     setIsRegistering(true);
     try {
       const response = await axios.post(
-        `/api/confrence/seminar/${id}/register`,
+        `http://localhost:5000/api/confrence/seminar/${id}/register`,
         formData
       );
       setMassage(response.data.message)
@@ -97,7 +96,7 @@ const RegistrationPage = () => {
             {seminar.picture && (
               <img
                 className='img-fluid'
-                src={`https://ogenduacademy.com/uploads/${seminar.picture.filename}`}
+                src={`/uploads/${seminar.picture.filename}`}
                 alt="Seminar"
               />
 
